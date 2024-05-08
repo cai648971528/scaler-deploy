@@ -1,0 +1,14 @@
+apiVersion: api.scaler.com/v1alpha1
+kind: Scaler
+metadata:
+  name: scaler-sample
+spec:
+  start: 18
+  end: 19
+  replicas: 2
+  deployments:
+    - name: my-dep-v1
+      namespace: default
+    - name: my-dep-v2
+      namespace: default
+
